@@ -8,6 +8,7 @@
   T: Type
   V: Value
   S U V: 2nd 3rd 4th types ...
+  泛型即提供一种形式供后面代码使用, 没有提供就不能使用
 */
 
 // 泛型函数(在函数中应用泛型)
@@ -27,7 +28,7 @@ function IdentityFn<T>(arg: T): T {
 let myIdentity: GenericIdentityFn<number> = IdentityFn;
 
 class GenericIdentityCls<T> {
-  title: T;
+  title!: T; //赋值断言
 }
 let clsIns = new GenericIdentityCls<string>();
 clsIns.title = 'learn ts';

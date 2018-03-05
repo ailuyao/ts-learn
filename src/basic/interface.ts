@@ -67,7 +67,7 @@ interface klsTest {
 }
 class flowComp implements klsTest {
   constructor(businessId: string, defKey?: string) {}
-  isShow: true;
+  isShow = true;
   callback() {}
   renderTemp() {
     console.log('render done.');
@@ -137,4 +137,4 @@ interface IProp {
   documentation: string;
   type: string;
 }
-let prop = {} as IProp;
+let prop = {} as IProp; // JSX 常用作类型断言

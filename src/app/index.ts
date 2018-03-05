@@ -1,0 +1,1 @@
+// https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/bootbox/index.d.ts

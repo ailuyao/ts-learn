@@ -1,6 +1,10 @@
 /// <reference path="../../tools/typings/jquery/index.d.ts" />
 /// <reference path="../../tools/typings/lodash/index.d.ts" />
 
+/**
+ * jquery扩展, 参考d.ts
+ * https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/jquery-mask-plugin/index.d.ts
+ */
 const delegateEventSplitter = /^(\S+)\s*(.*)$/;
 const viewOptions = ['$el', 'events'];
 
@@ -31,7 +35,7 @@ class BaseComponent {
     return this;
   }
 
-  delegate(eventName: string, selector: string, listener: VoidFunction) {
+  delegate(eventName: string, selector: string, listener: () => void) {
     this.$el.on(`${eventName}.delegateEvents`, selector, listener);
     return this;
   }
@@ -43,7 +47,7 @@ class BaseComponent {
     return this;
   }
 
-  undelegate(eventName: string, selector: string, listener: VoidFunction) {
+  undelegate(eventName: string, selector: string, listener: () => void) {
     this.$el.off(`${eventName}.delegateEvents`, selector, listener);
     return this;
   }

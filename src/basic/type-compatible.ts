@@ -3,13 +3,13 @@
  * 比较两个类类型数据时, 只有实例成员会被比较, 静态成员和构造函数不会比较
  */
 class Classify_1 {
-  tagName: string;
-  archive: string;
+  tagName!: string; //赋值断言, 告诉 TS 一个类的属性将来一定会被赋值
+  archive!: string;
   constructor(title: string) {}
 }
 
 class Classify_2 {
-  tagName: string;
+  tagName!: string;
   constructor(date: string | number) {}
 }
 

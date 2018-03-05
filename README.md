@@ -11,7 +11,7 @@ tsc -p "./tsconfig.json"
 
 ### d.ts
 
-[DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/jquery/index.d.ts)
+[DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)
 
 * curl <br />
   curl https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/jquery/index.d.ts -o index.d.ts
@@ -27,8 +27,8 @@ tsc -p "./tsconfig.json"
 typings 是作为 tsd 的替代者而出现(typings.json, tsd.json)
 
 ```
-npm uninstall -g typings #推荐使用 npm 管理类型定义文件
 npm uninstall -g tsd #tsd 已不推荐使用
+npm uninstall -g typings #typings 已不推荐使用, 推荐使用 npm 管理类型定义文件
 ```
 
 ### error detail

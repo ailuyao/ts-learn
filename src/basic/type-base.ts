@@ -26,9 +26,11 @@ let ionlyarray: ReadonlyArray<number> = [1, 2, 3, 5];
     使用越界索引赋值数组元素, 会使用联合类型
     使用越界索引调用数组元素方法, 只会使用共有的属性或方法
  */
+// https://github.com/Microsoft/TypeScript/pull/17765
+// Make tuples have known length #17765
 let ituple: [string, number];
 ituple = ['西湖', 5];
-ituple = ['滨江', 4, 9, '西湖'];
+// ituple = ['滨江', 4, 9, '西湖']; //but ituple[2] = 9
 
 // 枚举
 enum Color {
