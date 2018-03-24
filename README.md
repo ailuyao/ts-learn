@@ -1,4 +1,4 @@
-# ts-learn
+## ts-learn
 
 TypeScript Leanning Note
 
@@ -8,6 +8,8 @@ TypeScript Leanning Note
 sudo npm i -g typescript
 tsc -p "./tsconfig.json"
 ```
+
+[online coding](https://www.typescriptlang.org/play/)
 
 ### d.ts
 
@@ -34,3 +36,7 @@ npm uninstall -g typings #typings 已不推荐使用, 推荐使用 npm 管理类
 ### error detail
 
 [ts error detail](https://www.tslang.cn/docs/handbook/error.html)
+
+### VSCode
+
+[Variables Reference](https://code.visualstudio.com/docs/editor/variables-reference)

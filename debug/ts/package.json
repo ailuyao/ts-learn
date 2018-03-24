@@ -1,0 +1,13 @@
+{
+  "name": "vscode-debug-ts",
+  "version": "1.0.0",
+  "description": "By compiling",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "luyao",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^2.7.2"
+  }
+}

@@ -54,3 +54,16 @@ function fn_overload(x?: any): any {
     return [];
   }
 }
+
+/**
+ * 获取函数返回值类型, TS2.8
+ */
+type Reverse<T> = (arg: any) => T;
+
+function returnResultType<T>(arg: Reverse<T>): T {
+  return ({} as any) as T;
+}
+
+// result 类型是 number
+const result = returnResultType((arg: any) => 3);
+type ResultType = typeof result;
